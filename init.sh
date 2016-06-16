@@ -367,7 +367,7 @@ run_puppet() {
   export LC_ALL=en_GB.utf8
   echo ""
   echo "Running puppet apply"
-  puppet apply /etc/puppet/manifests/site.pp --detailed-exitcodes -v
+  puppet apply /etc/puppet/manifests/site.pp --detailed-exitcodes -vd
   PUPPET_EXIT=$?
 
   if [ $PUPPET_EXIT == 2 ]; then
